@@ -29,12 +29,14 @@ The model is designed for segmentation of 9 retinal layers such as:
 - RPE
 - Choroid
 
-  ## Dataset Structure
+# Install the required libraries:
+pip install tensorflow numpy pillow albumentations opencv-python scikit-learn matplotlib
 
+  ## Dataset Structure
 For the **NR dataset**, arrange the dataset as follows:
 
 ```text
-D:\layer\oct_dataset\oct_dataset
+oct_dataset
 │
 ├── train
 │   ├── img
