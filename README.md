@@ -1,6 +1,14 @@
 # EdgeFormerNet++: A Hybrid Attention-Guided Transformer Network for Accurate Retinal Layer Segmentation in OCT Images
-## Manuscript ID: IEEE LATAM Submission ID: 10551
-## Authors: Anju Thomas, Farhin Janath S. J., Vijayalakshmi P, Nisan Pranavah Raja, P. Palanisamy,Varun P. Gopi
+### Manuscript ID: IEEE LATAM Submission ID: 10551
+#### Authors and Affiliations:
+- Anju Thomas (Department of Electronics and Communication Engineering,National Institute of Technology Tiruchirappalli, Tamil Nadu, India., Department of Sensor & Biomedical Technology, School of Electronics Engineering, Vellore Institute of Technology,Vellore, India.)
+- Farhin Janath S. J. (Department of Electronics and Electronics Engineering, Government Engineering College, Barton Hill, Trivandrum, Kerala, India.)
+- Vijayalakshmi P (Department of Electronics and Electronics Engineering, Government Engineering College, Barton Hill, Trivandrum, Kerala, India.)
+-  Nisan Pranavah Raja (Department of Electronics and Communication Engineering,National Institute of Technology Tiruchirappalli, Tamil Nadu, India.)
+-   P. Palanisamy (Department of Electronics and Communication Engineering,National Institute of Technology Tiruchirappalli, Tamil Nadu, India.)
+-   Varun P. Gopi (Department of Electronics and Communication Engineering,National Institute of Technology Tiruchirappalli, Tamil Nadu, India.)
+
+  
 This repository contains the complete training and testing implementation of **EdgeFormerNet++**, a hybrid CNN–Transformer-based segmentation framework for retinal layer segmentation from OCT images.
 
 The code includes:
