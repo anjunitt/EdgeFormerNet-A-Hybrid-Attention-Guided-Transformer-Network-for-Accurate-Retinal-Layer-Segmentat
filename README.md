@@ -175,17 +175,7 @@ h5py
 
 ## Citation
 
-If you use this code, please cite:
-
-```bibtex
-@article{edgeformernetplus2026,
-  title={EdgeFormerNet++: Hybrid CNN-Transformer Network for OCT Retinal Layer Segmentation},
-  author={Your Name},
-  year={2026}
-}
-```
-
----
+Citation information will be updated once the manuscript is published.
 
 ## License
 
