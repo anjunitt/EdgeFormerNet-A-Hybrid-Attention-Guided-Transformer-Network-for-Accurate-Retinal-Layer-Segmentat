@@ -39,23 +39,154 @@ The model is designed for segmentation of 9 retinal layers such as:
 - RPE
 - Choroid
 
-# Install the required libraries:
-pip install tensorflow numpy pillow albumentations opencv-python scikit-learn matplotlib
+---
+| Dataset | Purpose |
+|----------|----------|
+| MGU Dataset | Macular layer segmentation |
+| NR206 Dataset | Peripappilary layer segmentation |
+## Installation
 
-  ## Dataset Structure
-For the **NR dataset**, arrange the dataset as follows:
+### Clone Repository
+
+```bash
+git clone https://github.com/anjunitt/EdgeFormerNet-A-Hybrid-Attention-Guided-Transformer-Network-for-Accurate-Retinal-Layer-Segmentat.git
+cd EdgeFormerNet-A-Hybrid-Attention-Guided-Transformer-Network-for-Accurate-Retinal-Layer-Segmentat
+```
+
+### Create Environment
+
+```bash
+python -m venv venv
+```
+
+### Activate Environment
+
+#### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+#### Linux
+
+```bash
+source venv/bin/activate
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Dataset Organization
+
+### MGU Dataset
 
 ```text
-oct_dataset
+MGU/
+├── train/
+│   ├── img/
+│   └── mask/
 │
-├── train
-│   ├── img
-│   └── mask
-│
-├── eval
-│   ├── img
-│   └── mask
-│
-└── test
-    ├── img
-    └── mask
+├── eval/
+│   ├── img/
+│   └── mask/
+```
+
+### NR206 Dataset
+
+```text
+NR206/
+├── train/
+├── train_labels/
+├── val/
+└── val_labels/
+```
+
+---
+
+## Running MGU Training
+
+```bash
+python MGU/train_mgu.py
+```
+
+---
+
+## Running NR206 Training
+
+```bash
+python NR206/train_nr206.py
+```
+
+---
+
+## Testing
+
+### MGU
+
+```bash
+python MGU/test_mgu.py
+```
+
+### NR206
+
+```bash
+python NR206/test_nr206.py
+```
+
+---
+
+## Expected Outputs
+
+The best-performing model is automatically saved as:
+
+```text
+EdgeFormer_Dice85_best_val_loss_xxxxx.h5
+```
+
+Evaluation metrics include:
+
+- Dice Score
+- Intersection over Union (IoU)
+- Pixel Accuracy
+
+---
+
+## Requirements
+
+```text
+tensorflow==2.10.0
+numpy
+Pillow
+albumentations
+opencv-python
+matplotlib
+scikit-learn
+scipy
+pandas
+h5py
+```
+
+---
+
+## Citation
+
+If you use this code, please cite:
+
+```bibtex
+@article{edgeformernetplus2026,
+  title={EdgeFormerNet++: Hybrid CNN-Transformer Network for OCT Retinal Layer Segmentation},
+  author={Your Name},
+  year={2026}
+}
+```
+
+---
+
+## License
+
+This project is released for academic and research purposes.
